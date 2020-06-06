@@ -5,4 +5,5 @@
 5、使用文本文档形式打开test.jpg/test.png即可发现 NTcxMTcyMDVIWVo=  
 6、注意！！！！！！因为在合成后打开合成的图片发现图片打不开。。。。所以就换了颜色隐藏那种方法：使用python LSBSteg.py encode –i input.png -o output.png -f info.txt这个方法将两个图重新隐藏数据（info.txt：57117205GYZ）  
 生成的最终结果test.png以及othertest.png  
-7、解密后可以得到57117205HYZ  
+7、解密后利用python LSBSteg.py decode –i output.png –o info.txt可以得到57117205HYZ  
+（结果test.png和othertest.png都是output重命名的。。。为了直接调用上面两个命令）
